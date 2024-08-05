@@ -19,7 +19,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         LOGGER.error(f"Was not able to find device with mac {entry.data[CONF_MAC]}")
     instance = BeurerInstance(device)
     hass.data.setdefault(DOMAIN, {})[entry.entry_id] = instance
-    hass.config_entries.async_setup_platforms(entry, PLATFORMS)
+    await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
     return True
 
 async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
