@@ -58,4 +58,8 @@ logger:
 ```
 
 ## Credits
-This integration will is a fork of [sysofwan ha-triones integration](https://github.com/sysofwan/ha-triones), whose framework I used for this Beurer integration
+This integration will is a fork of [sysofwan ha-triones integration](https://github.com/sysofwan/ha-triones), whose framework I used for this Beurer integration. 
+
+Additional help by: 
+- [@pyromaniac2k](https://github.com/pyromaniac2k)
+- [@ALandOfDodd](https://github.com/LandOfDodd)
