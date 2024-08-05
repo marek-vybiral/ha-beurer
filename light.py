@@ -95,8 +95,7 @@ class BeurerLight(LightEntity):
                 (DOMAIN, self._instance.mac)
             },
             "name": self.name,
-            "connections": {(device_registry.CONNECTION_NETWORK_MAC, self._instance.mac)},
-            "config_entry_id": self._entry_id
+            "connections": {(device_registry.CONNECTION_NETWORK_MAC, self._instance.mac)}
         }
 
     def _transform_color_brightness(self, color: Tuple[int, int, int], set_brightness: int):
